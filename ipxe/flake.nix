@@ -15,13 +15,17 @@
       in {
         devShells.default = pkgs.mkShell {
           buildInputs = [
-            pkgs.gcc
+            pkgs.zsh
+ 	    pkgs.gcc
             pkgs.gnumake
 	    pkgs.binutils
             pkgs.xz
 	    pkgs.git
           ];
-
+	
+          shellHook = ''
+            exec zsh
+	  '';
         };
       }
     );
