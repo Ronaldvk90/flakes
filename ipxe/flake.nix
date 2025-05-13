@@ -17,8 +17,6 @@
           buildInputs = [
             pkgs.gcc
             pkgs.gnumake
-#            pkgs.pkg-config
-#            pkgs.gdb
 	    pkgs.binutils
             pkgs.xz
 	    pkgs.git
